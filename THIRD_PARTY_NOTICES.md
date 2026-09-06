@@ -10,7 +10,7 @@ State, county/county-equivalent, and 2010 urban-area cartographic boundaries are
 
 ## U.S. cities data
 
-City/place coordinates and primary-county attributes are derived from the user-supplied SimpleMaps U.S. Cities database. The dashboard retains visible SimpleMaps attribution. Review the applicable source-data license before redistributing the raw cities file.
+City/place coordinates and primary-county attributes are derived from the study input from the SimpleMaps U.S. Cities database. The dashboard retains visible SimpleMaps attribution. Review the applicable source-data license before redistributing the raw cities file.
 
 ## HUD data and narratives
 

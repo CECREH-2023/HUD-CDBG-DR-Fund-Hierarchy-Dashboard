@@ -1,6 +1,6 @@
 # Package contents
 
-Public dashboard source, embedded data, data definitions, validation scripts, and use terms. The file list below describes this prepared snapshot.
+Public dashboard source, embedded data, data definitions, validation scripts, and use terms. The file list below describes the distributed repository version.
 
 - `.nojekyll`
 - `DATA_METHODS.md`

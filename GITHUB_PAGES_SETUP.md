@@ -1,51 +1,28 @@
-# GitHub Pages Setup
+# GitHub Pages deployment and updates
 
-## Recommended repository layout
+The dashboard is live at [the CECREH site](https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/). This repository publishes branch `main` from **/(root)** through GitHub Pages.
 
-Upload the extracted deployment-package **contents**, not the ZIP file or its enclosing folder. The repository root must directly contain:
+## Update the site
 
-```text
-index.html
-.nojekyll
-assets/
-data/
-privacy/
-scripts/
-README.md
+Build and validate changes in a local checkout. Commit application assets, data chunks, the narrative manifest, and documentation as one consistent version. Review removed files explicitly rather than deleting whole folders as an upload step. Preserve `index.html` and `.nojekyll` at the publishing root.
+
+```bash
+python scripts/validate_static_package.py --site-dir .
 ```
 
-## Publish
+After pushing, confirm the Pages build in **Actions** and open the live page. Test filters, maps, narrative loading, and reports. The [README](README.md) documents rebuilding from separately prepared inputs.
 
-1. Open the repository's **Settings**.
-2. Select **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main** and folder **/(root)**.
-5. Select **Save**.
+## Deploy a fork
 
-For `CECREH-2023/HUD-CDBG-DR-Fund-Hierarchy-Dashboard`, the expected URL is:
+In the fork's **Settings → Pages**, choose **Deploy from a branch**, the intended branch, and **/(root)**. The branch must contain the full static application and its matching `assets/`, `data/`, and `privacy/` files. GitHub provides the fork's own URL after deployment.
 
-```text
-https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/
-```
+## Public data boundary
 
-## Updating an earlier version
-
-Delete or overwrite old `index.html`, `assets/`, `data/`, `privacy/`, and documentation files before uploading the complete Version 6 package. Do not mix data chunks from different versions because the row schema and narrative manifest must match `assets/app.js` and `data/bootstrap.js`.
-
-## Privacy warning
-
-Never upload:
-
-- original narrative CSV files;
-- `RESTRICTED_NARRATIVE_ADDRESS_QA.csv`;
-- the restricted QA ZIP; or
-- any file containing unsanitized detected address strings.
-
-Only the public deployment ZIP is intended for the GitHub Pages repository.
+Only screened public excerpts and aggregate privacy statistics belong in the public tree. Original narratives, detected-address QA records, and other unsanitized working inputs remain in the authorized source environment. The [privacy method](privacy/NARRATIVE_PRIVACY_METHOD.md) describes the handling rules and their limitations.
 
 ## Troubleshooting
 
-- A 404 usually means `index.html` is not at the selected publishing root or Pages has not finished deploying.
-- A blank dashboard commonly indicates a partial upload or mixed-version `assets/` and `data/` folders.
-- Wait several minutes after a commit, then inspect **Actions** and **Settings → Pages**.
-- Use a current hardware-accelerated browser. If WebGL is unavailable, maps show a fallback message while filters, plots, narratives, reports, and downloads remain available.
+- For a 404, check the publishing branch/root and Pages build status.
+- For a blank or partly loaded page, check browser errors and whether application assets and data chunks came from the same build.
+- Use a local HTTP server for the multi-file edition; the standalone compatibility HTML can be opened directly.
+- If WebGL is unavailable, map views show a fallback message while other available controls continue to operate.

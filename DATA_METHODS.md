@@ -45,7 +45,7 @@ Sensitive residential signals override otherwise safe cues. The original detecte
 | Retained/highlighted mentions | 1,140 |
 | Redacted mentions | 1,088 |
 
-This automated procedure is conservative and is not a legal determination or guarantee that all PII has been identified. Public release should remain subject to institutional privacy review.
+This automated procedure is conservative and is not a legal determination or guarantee that all PII has been identified. The screening result is an automated text-handling assessment, not evidence of completed institutional privacy approval.
 
 ## Geography
 

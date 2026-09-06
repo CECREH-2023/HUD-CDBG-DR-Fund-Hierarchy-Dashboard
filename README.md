@@ -1,6 +1,6 @@
-# CDBG-DR Fund Dashboard — Privacy-Screened Narratives Edition
+# CDBG-DR Fund Dashboard
 
-https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/
+[Open the dashboard](https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/)
 
 The **CDBG-DR Fund Dashboard** is a browser-only GitHub Pages application for exploring U.S. Department of Housing and Urban Development Community Development Block Grant–Disaster Recovery financial activity. It combines quarter-level financial records, geographic matching, and privacy-screened Quarterly Performance Report (QPR) narrative excerpts in a static HTML/CSS/JavaScript site that requires no Python server after publication.
 
@@ -8,7 +8,7 @@ The **CDBG-DR Fund Dashboard** is a browser-only GitHub Pages application for ex
 
 The dashboard opens in **Explore & Compare**, which retains two independent analytical panels, seven linked filters, maps, financial timelines, aggregate downloads, a narrative-only checkbox, and linked privacy-screened narrative records.
 
-**Quick Report** provides a simpler path for time-constrained or less data-literate users. A user chooses report type, geography, time horizon, one financial measure, and optional filters; the dashboard produces a printable one-page decision brief with indicators, map, funding trend, top-five ranking, rule-based takeaways, and recent privacy-screened narrative highlights. Reports can be printed/saved as PDF and downloaded as PNG or CSV.
+**Quick Report** provides a simpler path for users who need a concise reporting workflow. A user chooses report type, geography, time horizon, one financial measure, and optional filters; the dashboard produces a printable one-page decision brief with indicators, map, funding trend, top-five ranking, rule-based takeaways, and recent privacy-screened narrative highlights. Reports can be printed/saved as PDF and downloaded as PNG or CSV.
 
 ## Narrative privacy workflow
 
@@ -22,13 +22,13 @@ The public package contains only sanitized narrative excerpts and aggregate priv
 
 ### Privacy-screening results in this build
 
-- 174,200 nonempty linked narrative records screened
+- 174,200 nonempty narrative records screened
 - 1,186 narratives with detected address-like mentions
 - 2,228 address-like mentions detected
-- 1,140 mentions retained and highlighted in approved infrastructure/multifamily contexts
+- 1,140 mentions retained and highlighted in rule-classified infrastructure/multifamily contexts
 - 1,088 potential single-family or ambiguous mentions redacted
 
-See `privacy/NARRATIVE_PRIVACY_METHOD.md` and `privacy/narrative_activity_privacy_crosswalk.csv`.
+See [privacy methodology](privacy/NARRATIVE_PRIVACY_METHOD.md) and the [activity crosswalk](privacy/narrative_activity_privacy_crosswalk.csv).
 
 ## Core functions
 
@@ -54,20 +54,7 @@ County and city/place assignments include inferred matches. The dashboard report
 
 ## GitHub Pages deployment
 
-Upload the **contents of this folder** to the repository root so that `index.html`, `.nojekyll`, `assets/`, and `data/` are directly visible. Then configure:
-
-```text
-Repository → Settings → Pages
-Source: Deploy from a branch
-Branch: main
-Folder: /(root)
-```
-
-For the repository `CECREH-2023/HUD-CDBG-DR-Fund-Hierarchy-Dashboard`, the expected project URL is:
-
-```text
-https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/
-```
+The [live site](https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/) is published from `main` at the repository root. See [deployment and updates](GITHUB_PAGES_SETUP.md) for the complete workflow. Keep data chunks and application assets from the same build together.
 
 ## Local preview
 
@@ -93,7 +80,7 @@ python scripts/validate_static_package.py --site-dir .
 
 ## Documentation
 
-- `USER_GUIDE.md` — dashboard operation and report downloads.
-- `DATA_METHODS.md` — data, linkage, geography, and privacy methods.
-- `GITHUB_PAGES_SETUP.md` — deployment and troubleshooting.
+- [User guide](USER_GUIDE.md) — dashboard operation and report downloads.
+- [Data and methods](DATA_METHODS.md) — data, linkage, geography, and privacy methods.
+- [Deployment](GITHUB_PAGES_SETUP.md) — deployment and troubleshooting.
 - `privacy/` — public privacy methodology, summary, and activity crosswalk.
