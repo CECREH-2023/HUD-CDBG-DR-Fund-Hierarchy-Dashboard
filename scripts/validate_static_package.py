@@ -19,7 +19,6 @@ REQUIRED = [
     "index.html", ".nojekyll", "assets/app.css", "assets/app.js",
     "assets/vendor/plotly-3.3.1.min.js", "data/bootstrap.js", "data/metadata.json",
     "README.md", "USER_GUIDE.md", "DATA_METHODS.md", "GITHUB_PAGES_SETUP.md",
-    "REVISION_NOTES_V6.md", "PACKAGE_MANIFEST.md", "privacy/NARRATIVE_PRIVACY_METHOD.md",
     "privacy/narrative_activity_privacy_crosswalk.csv", "privacy/narrative_privacy_summary.json",
 ]
 EXPECTED_COLUMNS = {

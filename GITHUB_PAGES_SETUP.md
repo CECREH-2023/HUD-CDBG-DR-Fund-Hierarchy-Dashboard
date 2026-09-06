@@ -22,10 +22,10 @@ README.md
 4. Select branch **main** and folder **/(root)**.
 5. Select **Save**.
 
-For `kaifalu/HUD-CDBG-DR-Fund-Dashboard-Hierarchical`, the expected URL is:
+For `CECREH-2023/HUD-CDBG-DR-Fund-Hierarchy-Dashboard`, the expected URL is:
 
 ```text
-https://kaifalu.github.io/HUD-CDBG-DR-Fund-Dashboard-Hierarchical/
+https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/
 ```
 
 ## Updating an earlier version

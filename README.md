@@ -63,10 +63,10 @@ Branch: main
 Folder: /(root)
 ```
 
-For the repository `kaifalu/HUD-CDBG-DR-Fund-Dashboard-Hierarchical`, the expected project URL is:
+For the repository `CECREH-2023/HUD-CDBG-DR-Fund-Hierarchy-Dashboard`, the expected project URL is:
 
 ```text
-https://kaifalu.github.io/HUD-CDBG-DR-Fund-Dashboard-Hierarchical/
+https://CECREH-2023.github.io/HUD-CDBG-DR-Fund-Hierarchy-Dashboard/
 ```
 
 ## Local preview
@@ -96,6 +96,4 @@ python scripts/validate_static_package.py --site-dir .
 - `USER_GUIDE.md` — dashboard operation and report downloads.
 - `DATA_METHODS.md` — data, linkage, geography, and privacy methods.
 - `GITHUB_PAGES_SETUP.md` — deployment and troubleshooting.
-- `REVISION_NOTES_V6.md` — changes in this release.
-- `VALIDATION_REPORT.md` — completed package and browser checks.
 - `privacy/` — public privacy methodology, summary, and activity crosswalk.

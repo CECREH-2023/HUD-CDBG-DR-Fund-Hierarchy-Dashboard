@@ -1,32 +1,78 @@
-# Public Package Manifest
+# Package contents
 
-## Runtime files
+Public dashboard source, embedded data, data definitions, validation scripts, and use terms. The file list below describes this prepared snapshot.
 
-- `index.html` — GitHub Pages entry point.
-- `.nojekyll` — disables Jekyll processing.
-- `assets/app.css` — responsive interface and print styles.
-- `assets/app.js` — filters, maps, reports, narrative rendering, and downloads.
-- `assets/vendor/plotly-3.3.1.min.js` — bundled Plotly runtime.
-- `data/bootstrap.js` — dictionaries, metadata, manifests, and runtime schema.
-- `data/rows/*.js` — compact 27-field financial/geographic rows including linked-narrative flags/IDs.
-- `data/narratives/*.js` — year-partitioned privacy-screened public narrative excerpts.
-- `data/geography/*.js` — state, county, and urban-area geographic assets.
-- `privacy/` — public privacy method, summary, and activity-type decision crosswalk.
-- `HUD-CDBG-DR-Fund-Dashboard-Hierarchical.html` — self-contained edition.
-
-## Reproducibility scripts
-
-- `scripts/sanitize_narratives.py`
-- `scripts/build_static_data.py`
+- `.nojekyll`
+- `DATA_METHODS.md`
+- `GITHUB_PAGES_SETUP.md`
+- `HUD-CDBG-DR-Fund-Dashboard-Hierarchical.html`
+- `LICENSE`
+- `NOTICE.md`
+- `PACKAGE_CONTENTS_SHA256.txt`
+- `README.md`
+- `THIRD_PARTY_NOTICES.md`
+- `USER_GUIDE.md`
+- `assets/app.css`
+- `assets/app.js`
+- `assets/favicon.svg`
+- `assets/vendor/PLOTLY_LICENSE.txt`
+- `assets/vendor/plotly-3.3.1.min.js`
+- `data/STATIC_DATA_SCHEMA.md`
+- `data/bootstrap.js`
+- `data/geography/county.js`
+- `data/geography/state.js`
+- `data/geography/urban.js`
+- `data/metadata.json`
+- `data/narratives/narratives_2002_000.js`
+- `data/narratives/narratives_2003_000.js`
+- `data/narratives/narratives_2004_000.js`
+- `data/narratives/narratives_2005_000.js`
+- `data/narratives/narratives_2006_000.js`
+- `data/narratives/narratives_2007_000.js`
+- `data/narratives/narratives_2008_000.js`
+- `data/narratives/narratives_2009_000.js`
+- `data/narratives/narratives_2010_000.js`
+- `data/narratives/narratives_2011_000.js`
+- `data/narratives/narratives_2012_000.js`
+- `data/narratives/narratives_2013_000.js`
+- `data/narratives/narratives_2014_000.js`
+- `data/narratives/narratives_2015_000.js`
+- `data/narratives/narratives_2016_000.js`
+- `data/narratives/narratives_2016_001.js`
+- `data/narratives/narratives_2017_000.js`
+- `data/narratives/narratives_2017_001.js`
+- `data/narratives/narratives_2018_000.js`
+- `data/narratives/narratives_2018_001.js`
+- `data/narratives/narratives_2019_000.js`
+- `data/narratives/narratives_2019_001.js`
+- `data/narratives/narratives_2020_000.js`
+- `data/narratives/narratives_2020_001.js`
+- `data/narratives/narratives_2021_000.js`
+- `data/narratives/narratives_2022_000.js`
+- `data/narratives/narratives_2023_000.js`
+- `data/narratives/narratives_2024_000.js`
+- `data/narratives/narratives_2025_000.js`
+- `data/rows/rows_000.js`
+- `data/rows/rows_001.js`
+- `data/rows/rows_002.js`
+- `data/rows/rows_003.js`
+- `data/rows/rows_004.js`
+- `data/rows/rows_005.js`
+- `data/rows/rows_006.js`
+- `docs/browser_smoke_v6.json`
+- `docs/dashboard_explore_default_preview_v6.png`
+- `docs/dashboard_quick_report_preview_v6.png`
+- `docs/package_validation_v6.json`
+- `docs/static_build_v6.json`
+- `index.html`
+- `privacy/NARRATIVE_PRIVACY_METHOD.md`
+- `privacy/narrative_activity_privacy_crosswalk.csv`
+- `privacy/narrative_privacy_summary.json`
+- `run_local.bat`
+- `run_local.sh`
 - `scripts/build_self_contained.py`
+- `scripts/build_static_data.py`
 - `scripts/prepare_financial_geography.py`
+- `scripts/sanitize_narratives.py`
 - `scripts/validate_static_package.py`
-
-## Files deliberately excluded from the public package
-
-- original unsanitized narrative CSV files;
-- restricted address QA table containing original detected strings;
-- server-side databases and credentials;
-- raw financial rows as a browser-download option.
-
-The restricted QA deliverable must remain controlled and must not be copied into the GitHub Pages repository.
+- `scripts/vendor/pako_inflate.min.js`
